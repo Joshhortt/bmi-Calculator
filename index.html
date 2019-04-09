@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="style.css">
+      <title>BMI - Calculator</title>
+   </head>
+   <body>
+      <div id=outer>
+         <b>Body Mass Index (BMI) Calculator</b>
+         <div id=cover>
+            <form name=fn>
+               <table class=main>
+                  <col class=w60>
+                  <col class=w60>
+                  <tr>
+                     <td>Measuring System
+                     <td>
+                        <select id=msm onchange=msystem();>
+                           <option value=metric>Metric (Kgs, Cms)
+                           <option value=us>US (lbs, inches)
+                        </select>
+                  <tr>
+                     <td>Height<span id=thm> (Cms)</span>
+                     <td>
+                        <input id=hm>
+                  <tr>
+                     <td>Weight <span id=twm> (Kgs)</span>
+                     <td>
+                        <input id=wm>
+                  <tr>
+                     <td>
+                        <button type=reset>Reset</button>
+                     <td>
+                        <button type=button onclick='bmass();'>Submit</button>
+                  <tr>
+                     <td>Body Mass Index (BMI)
+                     <td>
+                        <input id=bmi class=op>
+                  <tr>
+                     <td>Normal BMI range
+                     <td>
+                        <input class=op id=nbmi value='18.5-25 kg/m2'>
+                  <tr>
+                     <td colspan=2 class=ac>
+                        <br>BMI, formerly called the Quetelet index are calculations based on World Health Organization recommendations.
+               </table>
+            </form>
+         </div>
+      </div>
+
+      <script type="text/javascript" src="script.js"></script>
+
+   </body>
+   </html>
